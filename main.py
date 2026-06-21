@@ -10,4 +10,13 @@ def pass_gen(length):
     for i in range(length):
         password += random.choice(pool)
     return password
-print(pass_gen(99))
+
+print("Welcome to password Generator")
+try:
+    length = int(input("Enter the amount of charectors u want(max 128): "))
+    if length > 128 or  length < 0:
+        print(pass_gen(length))
+    else:
+        print(f"Your generatod password is: {pass_gen(length)}")
+except ValueError:
+    print("Please Type a valid number!")
