@@ -1,2 +1,5 @@
 .wakatime-project
 venv/
+main.spec
+dist/
+build/
